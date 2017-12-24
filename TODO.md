@@ -1,0 +1,1 @@
+get a lighter version of discord-rpc
