@@ -45,7 +45,7 @@ function setActivity(){
 	var dat={};
 	var areaName = simplify.getActiveMapName().split(".")[0];
 	var chapterNumber = cc.ig.TextCommand.evaluate("\\v[chapter.current]");
-	var chapterName = cc.ig.TextCommand.evaluate(`\\v[chapter.name.${chapterNumber}]`);
+	var chapterName = cc.ig.TextCommand.evaluate("\\v[chapter.name."+chapterNumber+"]");
 	var chapter = "";
 	if(chapterNumber === "0") {
 		chapter = 'Prologue - ';
