@@ -15,7 +15,7 @@ document.body.addEventListener('modsLoaded', () => {
 
 function setActivity(){
     if (!rpc) return;
-    if(sc.model.isTitle()) {
+    if(sc.model.isTitle() || !ig.ready) {
 		rpc.setActivity({
 			state : 'Menu',
 			details : 'In the menu',
@@ -45,7 +45,7 @@ function setActivity(){
 			startTimestamp: timeStamp,
 			partySize: partySize,
 			partyMax: partyMax,
-			'smallImageKey':elem.toLowerCase(),
+			'smallImageKey': 'e-' + elem.toLowerCase(),
 			'smallImageText':elem,
 			'largeImageKey': getArtKey(area),
 			'largeImageText': areaName,
