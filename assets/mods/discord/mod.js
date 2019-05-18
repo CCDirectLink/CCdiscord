@@ -61,7 +61,7 @@ function getState(areaName) {
 	} else {
 		if(sc.pvp.isActive()) 
 			state = "In a PvP";
-		else if(sc.combat.isInCombat(sc.model.player))
+		else if(sc.combat.isInCombat(ig.game.playerEntity))
 			state = "In combat ";
 		else
 			state = "Exploring";			
