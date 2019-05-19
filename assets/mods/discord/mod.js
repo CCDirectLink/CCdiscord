@@ -78,7 +78,7 @@ function getChapterText() {
 	var chapterData = ig.database.get("chapters")[chapter];
 	var chapterRet;
 	if (chapterData.prefix) {
-		chapterRet = chapterData.prefix;
+		chapterRet = chapterData.prefix[ig.currentLang];
 	} else {
 		chapter = chapter.toString().padStart(2, '0');
 		chapterRet = `Chapter ${chapter}`;
