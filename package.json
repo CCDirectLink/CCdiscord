@@ -1,4 +1,7 @@
 {
     "name": "Discord",
-    "prestart": "mod.js"
+    "prestart": "mod.js",
+    "dependencies": {
+        "discord-rpc": "^3.0.2"
+    }
 }
