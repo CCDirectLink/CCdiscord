@@ -1,2 +1,2 @@
-Copy into the `assets/mods/` folder
+Copy the discord folder into `assets/mods/`
 You need an up to date version of nw
