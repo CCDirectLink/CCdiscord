@@ -1,7 +1,7 @@
 {
     "name": "Discord",
-    "prestart": "mod.js",
-    "dependencies": {
-        "discord-rpc": "^3.0.2"
-    }
+	"prestart": "mod.js",
+	"ccmodDependencies" : {
+		"mod-require-fix": "^1.0.0"
+	}
 }
