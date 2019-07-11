@@ -10,7 +10,7 @@ rpc.on('ready', () => {
 });
 
 document.body.addEventListener('modsLoaded', () => {
-	rpc.login("376560840012201984").catch(console.error);
+	rpc.login({clientId: "376560840012201984"}).catch(console.error);
 });
 
 function setActivity(){
