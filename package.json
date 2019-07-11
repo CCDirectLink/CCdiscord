@@ -1,4 +1,4 @@
 {
     "name": "Discord",
-    "main": "mod.js"
+    "prestart": "mod.js"
 }
