@@ -1,0 +1,7 @@
+{
+    "name": "Discord",
+	"prestart": "mod.js",
+	"ccmodDependencies" : {
+		"mod-require-fix": "^1.0.0"
+	}
+}
