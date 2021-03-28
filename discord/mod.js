@@ -1,4 +1,7 @@
-const DiscordRPC = require("discord-rpc");
+const paths = require('path');
+const DiscordRPC = require(paths.join(
+  process.cwd(), new URL('./node_modules/discord-rpc', import.meta.url).pathname
+));
 const rpc = new DiscordRPC.Client({ transport: 'ipc' });
 
 
@@ -10,7 +13,7 @@ rpc.on('ready', () => {
 });
 
 document.body.addEventListener('modsLoaded', () => {
-	rpc.login({clientId: "376560840012201984"}).catch(console.error);
+	rpc.login({clientId: "823908584974450718"}).catch(console.error);
 });
 
 function setActivity(){
@@ -87,7 +90,34 @@ function getChapterText() {
 	return chapterRet;
 }
 
-const artList="autumn jungle-city bergen heat-dng jungle heat rhombus-sqr heat-village rookie-harbor".split(" ");
+const artList="cargo-ship rhombus-dng arid arid-dng autumn autumn-fall beach bergen bergen-trail cold-dng evo-village final-dng forest heat heat-dng heat-village hideout jungle jungle-city rhombus-sqr rookie-harbor shock-dng wave-dng tree-dng".split(" ");
+
+const ART_LIST = [
+  'cargo-ship',
+  'rhombus-dng',
+  'arid',
+  'arid-dng',
+  'autumn',
+  'autumn-fall',
+  'beach',
+  'bergen',
+  'bergen-trail',
+  'cold-dng',
+  'evo-village',
+  'final-dng',
+  'forest',
+  'heat',
+  'heat-dng',
+  'heat-village',
+  'hideout',
+  'jungle',
+  'jungle-city',
+  'rhombus-sqr',
+  'rookie-harbor',
+  'shock-dng',
+  'tree-dng',
+  'wave-dng',
+];
 
 function getArtKey(area) {
 	
