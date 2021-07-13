@@ -1,8 +1,0 @@
-{
-	"name": "mod-require-fix",
-	"version": "1.0.1",
-	"description": "Assists in the usage of NPM packages from CrossCode mods.",
-	"homepage": "https://github.com/CCDirectLink/CCdiscord",
-	"preload": "preload.js",
-	"module": true
-}
