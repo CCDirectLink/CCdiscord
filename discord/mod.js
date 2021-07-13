@@ -1,6 +1,7 @@
 const paths = require('path');
 const DiscordRPC = require(paths.join(
-  process.cwd(), new URL('./node_modules/discord-rpc', import.meta.url).pathname
+  process.cwd(),
+	decodeURIComponent(new URL('./node_modules/discord-rpc', import.meta.url).pathname),
 ));
 const rpc = new DiscordRPC.Client({ transport: 'ipc' });
 
