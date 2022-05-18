@@ -37,7 +37,7 @@ function setActivity(){
 
 	const elem = getCurrentElementName();
 	
-	const timeStamp = new Date().getTime()/1000-cc.sc.stats.getStat("player", "playtime");
+	const timeStamp = new Date().getTime()-cc.sc.stats.getStat("player", "playtime")*1000;
     
 	var partySize = sc.party.getPartySize() + 1;
 	
