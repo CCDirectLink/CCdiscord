@@ -1,12 +1,9 @@
 {
-    "name": "Discord",
-    "prestart": "mod.js",
-    "ccmodHumanName": "Rich Presence for Discord",
+    "name": "cc-discord",
     "version": "1.0.1",
     "homepage": "https://github.com/CCDirectLink/CCdiscord",
     "description": "Show off your CrossCode skills in Discord",
     "module": true,
-    "ccmodDependencies": {},
     "dependencies": {
         "discord-rpc": "^3.2.0"
     }

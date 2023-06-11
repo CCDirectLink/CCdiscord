@@ -5,17 +5,13 @@ const DiscordRPC = require(paths.join(
 ));
 const rpc = new DiscordRPC.Client({ transport: 'ipc' });
 
-
-
 rpc.on('ready', () => {
 	// activity can only be set every 15 seconds
 	setActivity();
 	setInterval(setActivity, 15e3);
 });
 
-document.body.addEventListener('modsLoaded', () => {
-	rpc.login({clientId: "823908584974450718"}).catch(console.error);
-});
+rpc.login({clientId: "823908584974450718"}).catch(console.error);
 
 function setActivity(){
     if (!rpc) return;
@@ -92,33 +88,6 @@ function getChapterText() {
 }
 
 const artList="cargo-ship rhombus-dng arid arid-dng autumn autumn-fall beach bergen bergen-trail cold-dng evo-village final-dng forest heat heat-dng heat-village hideout jungle jungle-city rhombus-sqr rookie-harbor shock-dng wave-dng tree-dng".split(" ");
-
-const ART_LIST = [
-  'cargo-ship',
-  'rhombus-dng',
-  'arid',
-  'arid-dng',
-  'autumn',
-  'autumn-fall',
-  'beach',
-  'bergen',
-  'bergen-trail',
-  'cold-dng',
-  'evo-village',
-  'final-dng',
-  'forest',
-  'heat',
-  'heat-dng',
-  'heat-village',
-  'hideout',
-  'jungle',
-  'jungle-city',
-  'rhombus-sqr',
-  'rookie-harbor',
-  'shock-dng',
-  'tree-dng',
-  'wave-dng',
-];
 
 function getArtKey(area) {
 	
