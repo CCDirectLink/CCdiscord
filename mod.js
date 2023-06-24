@@ -29,7 +29,7 @@ function setActivity() {
   const area = getArea();
   const areaName = sc.map.getCurrentAreaName().value;
   const elem = getCurrentElementName();
-  const timeStamp = new Date().getTime() - cc.sc.stats.getStat('player', 'playtime') * 1000;
+  const timeStamp = new Date().getTime() - sc.stats.get('player', 'playtime') * 1000;
   var partySize = sc.party.getPartySize() + 1;
   var partyMax = sc.PARTY_MAX_MEMBERS + 1;
 
