@@ -26,26 +26,28 @@ function setActivity() {
     return;
   }
 
-  const area = getArea();
-  const areaName = sc.map.getCurrentAreaName().value;
-  const elem = getCurrentElementName();
-  const timeStamp = new Date().getTime() - sc.stats.get('player', 'playtime') * 1000;
-  var partySize = sc.party.getPartySize() + 1;
-  var partyMax = sc.PARTY_MAX_MEMBERS + 1;
+  try {
+    const area = getArea();
+    const areaName = sc.map.getCurrentAreaName().value
+    const elem = getCurrentElementName();
+    const timeStamp = new Date().getTime() - sc.stats.get('player', 'playtime') * 1000;
+    var partySize = sc.party.getPartySize() + 1;
+    var partyMax = sc.PARTY_MAX_MEMBERS + 1;
 
-  var rpcData = {
-    details: getChapterText(),
-    state: getState(areaName),
-    startTimestamp: timeStamp,
-    partySize: partySize,
-    partyMax: partyMax,
-    smallImageKey: 'e-' + elem.toLowerCase(),
-    smallImageText: elem,
-    largeImageKey: getArtKey(area),
-    largeImageText: areaName,
-    instance: false,
-  };
-  rpc.setActivity(rpcData);
+    var rpcData = {
+      details: getChapterText(),
+      state: getState(areaName),
+      startTimestamp: timeStamp,
+      partySize: partySize,
+      partyMax: partyMax,
+      smallImageKey: 'e-' + elem.toLowerCase(),
+      smallImageText: elem,
+      largeImageKey: getArtKey(area),
+      largeImageText: areaName,
+      instance: false,
+    };
+    rpc.setActivity(rpcData);
+  } catch (e) { }
 }
 
 function getState(areaName) {
