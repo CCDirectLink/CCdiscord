@@ -11,7 +11,7 @@ rpc.on('ready', () => {
   setInterval(setActivity, 15e3);
 });
 
-rpc.login({ clientId: '823908584974450718' }).catch(console.error);
+rpc.login({ clientId: '823908584974450718' }).catch();
 
 function setActivity() {
   if (!rpc) return;
