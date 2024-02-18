@@ -1,7 +1,10 @@
 {
   "id": "cc-discord",
   "version": "1.0.0",
-  "name": "Rich Presence for Discord",
+  "title": "Rich Presence for Discord",
   "description": "Show off your CrossCode skills in Discord.",
+  "repository": "https://github.com/CCDirectLink/CCdiscord",
+  "tags": ["cosmetic"],
+  "authors": ["dmitmel", "ac2pic", "meanuplayz", "omegalink12", "2767mr", "lexisother", "krypek"],
   "poststart": "mod.js"
 }
