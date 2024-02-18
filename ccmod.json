@@ -5,6 +5,6 @@
   "description": "Show off your CrossCode skills in Discord.",
   "repository": "https://github.com/CCDirectLink/CCdiscord",
   "tags": ["cosmetic"],
-  "authors": ["dmitmel", "ac2pic", "meanuplayz", "omegalink12", "2767mr", "lexisother", "krypek"],
+  "authors": ["dmitmel", "ac2pic", "keanuplayz", "omegalink12", "2767mr", "lexisother", "krypek"],
   "poststart": "mod.js"
 }
