@@ -1,6 +1,6 @@
 {
   "id": "cc-discord",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "title": "Rich Presence for Discord",
   "description": "Show off your CrossCode skills in Discord.",
   "repository": "https://github.com/CCDirectLink/CCdiscord",
